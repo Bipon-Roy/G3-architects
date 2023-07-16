@@ -175,13 +175,19 @@ main {
 
 /* tablet or medium Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header {
-        padding: 25px;
-    }
-    .nav-container {
+    .teams-container {
         flex-direction: column;
     }
-    .link-container {
-        margin-top: 3rem;
+    .teams-content {
+        width: fit-content;
+        padding: 0 6rem;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-bottom: 1.5rem;
+    }
+    .teams-description {
+        text-align: justify;
     }
 }
