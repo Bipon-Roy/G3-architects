@@ -286,3 +286,131 @@ main {
         margin: 0 1rem;
     }
 }
+
+/* Features Section */
+.features-title {
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #ff900e;
+    padding-left: 1.5rem;
+}
+.features-content {
+    margin-right: 2rem;
+}
+.features-description {
+    margin-bottom: 2rem;
+}
+.features-main {
+    margin-top: 5rem;
+    display: flex;
+    gap: 5rem;
+}
+.card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-years {
+    border-radius: 8px;
+    background: #ff900e;
+    color: #fff;
+    width: 230px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    right: 60px;
+}
+
+.ten-years h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.ten-years p {
+    font-size: 1.2rem;
+}
+.features-img img {
+    height: 80%;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .features-main {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .features-img img {
+        width: 100%;
+    }
+    .ten-years {
+        display: none;
+    }
+}
+
+/* tablet or medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .features-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .features-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .features-content {
+        margin-right: 1rem;
+    }
+    .ten-years {
+        width: 150px;
+        padding: 20px;
+    }
+    .ten-years h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .ten-years p {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Section */
+.footer-container {
+    max-width: 1240px;
+    background: #fff4e7;
+    margin: 1rem auto 6rem auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #424242;
+    font-size: 20px;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .footer-container {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+    .footer-text {
+        font-size: 16px;
+    }
+}
+
+/* tablet or medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .footer-text {
+        font-size: 16px;
+    }
+}
