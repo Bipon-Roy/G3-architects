@@ -12,7 +12,9 @@
 .text-light-gray {
     color: #727272;
 }
-
+.main-color {
+    color: #ff900e;
+}
 .btn-primary {
     border-radius: 8px;
     color: #fff;
@@ -29,14 +31,13 @@
     font-weight: 700;
     color: #131313;
 }
-
 /* Header Style */
 header {
     background: rgba(255, 144, 14, 0.1);
     padding: 32px 240px;
 }
 .nav-container {
-    max-width: 1240px;
+    max-width: 1340px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +64,7 @@ header {
     font-weight: 700;
 }
 .banner-container {
-    max-width: 1240px;
+    max-width: 1340px;
     margin: 0 auto;
 }
 
@@ -107,9 +108,75 @@ header {
 }
 
 /* tablet or medium Devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
     header {
-        padding: 30px;
+        padding: 25px;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .link-container {
+        margin-top: 3rem;
+    }
+}
+
+/* Main Section Style */
+main {
+    max-width: 1240px;
+    margin: 5rem auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.teams-content {
+    width: 468px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-01, #131313);
+    margin-bottom: 1.2rem;
+}
+.teams-description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Teams */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .teams-container {
+        flex-direction: column;
+    }
+    .teams-content {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .team-img-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* tablet or medium Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
+        padding: 25px;
     }
     .nav-container {
         flex-direction: column;
